@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
+import heroBg from '@/assets/hero-bg-light.jpg';
 
 const Hero = () => {
   const handleJoinClick = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-surface/95" />
       
       {/* Neural Network Pattern Overlay */}
       <div className="absolute inset-0 neural-bg" />
