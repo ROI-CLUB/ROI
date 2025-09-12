@@ -151,43 +151,17 @@ const Contact = () => {
 
               {/* Action Buttons */}
               <div className="space-y-4">
-                <Button 
-                  onClick={handleJoinClick}
-                  className="w-full bg-gradient-primary hover:glow-primary transition-all duration-300 transform hover:scale-105 text-lg py-6"
+                <a 
+                  href="/register"
+                  className="inline-flex items-center justify-center w-full bg-gradient-primary hover:glow-primary transition-all duration-300 transform hover:scale-105 text-lg py-6 rounded-md"
                 >
                   Join Our Club
                   <ExternalLink className="ml-2 h-5 w-5" />
-                </Button>
-                
-                <Button 
-                  variant="outline"
-                  className="w-full border-primary/30 text-primary hover:bg-primary/10 transition-all duration-300"
-                  onClick={() => window.open('mailto:contact@roitechclub.edu')}
-                >
-                  Send Email
-                  <Mail className="ml-2 h-5 w-5" />
-                </Button>
+                </a>
               </div>
             </div>
 
-            {/* Office Hours */}
-            <div className="mt-6 p-6 rounded-xl bg-card border border-card-border">
-              <h4 className="font-semibold text-foreground mb-4">Office Hours</h4>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
-                </div>
-              </div>
-            </div>
+            {/* Office Hours removed per request */}
           </div>
         </div>
       </div>

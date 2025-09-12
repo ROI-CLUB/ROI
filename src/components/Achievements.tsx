@@ -245,9 +245,9 @@ const Achievements = () => {
               <p className="text-muted-foreground mb-6">
                 Join us and contribute to groundbreaking achievements in artificial intelligence
               </p>
-              <Button className="bg-gradient-primary hover:glow-primary transition-all duration-300 transform hover:scale-105">
+              <a href="/register" className="inline-flex items-center px-4 py-2 rounded-md bg-gradient-primary hover:glow-primary transition-all duration-300 transform hover:scale-105">
                 Join ROI Tech Club
-              </Button>
+              </a>
             </div>
           </div>
         </div>

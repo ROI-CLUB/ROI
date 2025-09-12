@@ -1,4 +1,4 @@
-import { Code, Palette, Calendar, Megaphone, Search } from 'lucide-react';
+import { Code, Palette, Calendar, Megaphone, Search, GraduationCap } from 'lucide-react';
 
 const Committees = () => {
   const committees = [
@@ -31,6 +31,12 @@ const Committees = () => {
       title: "Outreach & PR",
       description: "Building industry partnerships, managing public relations, and expanding the club's network within the AI community.",
       color: "secondary"
+    },
+    {
+      icon: GraduationCap,
+      title: "AI Education & Training",
+      description: "Conduct structured learning sessions, beginner-to-advanced tutorials, and mentorship programs to help members strengthen their AI foundations.",
+      color: "accent"
     }
   ];
 
@@ -76,10 +82,7 @@ const Committees = () => {
                   {committee.description}
                 </p>
 
-                {/* Join Button */}
-                <button className="w-full py-3 px-4 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-300 text-sm font-medium">
-                  Join This Committee
-                </button>
+                {/* Join button removed per request */}
               </div>
 
               {/* Decorative Elements */}

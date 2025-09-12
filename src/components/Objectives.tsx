@@ -1,4 +1,4 @@
-import { BookOpen, Wrench, Users2, Handshake, Award } from 'lucide-react';
+import { BookOpen, Wrench, Users2, Handshake, Award, Briefcase } from 'lucide-react';
 
 const Objectives = () => {
   const objectives = [
@@ -26,6 +26,11 @@ const Objectives = () => {
       icon: Award,
       title: "Bridge Industry & Academia",
       description: "Establish strong connections with tech industry leaders and research institutions to provide career opportunities and mentorship."
+    },
+    {
+      icon: Briefcase,
+      title: "Enhance Career Readiness",
+      description: "Equip students with mentorship, portfolio-building opportunities, mock interviews, and exposure to real-world AI applications to prepare them for future careers."
     }
   ];
 

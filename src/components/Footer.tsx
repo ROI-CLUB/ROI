@@ -53,11 +53,6 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center md:text-right">
-            <div className="flex items-center justify-center md:justify-end mb-2">
-              <span className="text-muted-foreground text-sm mr-1">Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span className="text-muted-foreground text-sm ml-1">by ROI Tech Club</span>
-            </div>
             <p className="text-muted-foreground text-sm">
               © {currentYear} ROI Tech Club. All rights reserved.
             </p>

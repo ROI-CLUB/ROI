@@ -1,0 +1,15 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0b1220" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0b1220" />
+  <rect x="0" y="0" width="1200" height="800" fill="url(#rg)" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Poppins, Inter, sans-serif" font-size="48" fill="#cbd5e1" opacity="0.9">
+    Humanoid AI Placeholder
+  </text>
+</svg>
+
+

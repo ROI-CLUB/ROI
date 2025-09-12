@@ -61,14 +61,12 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
-            <Button
-              variant="default"
-              size="sm"
-              className="bg-gradient-primary hover:glow-primary transition-all duration-300"
-              onClick={() => handleClick('#contact')}
+            <a
+              href="/register"
+              className="inline-flex items-center px-4 py-2 rounded-md bg-gradient-primary hover:glow-primary transition-all duration-300 text-sm"
             >
               Join Club
-            </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -93,14 +91,12 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button
-                variant="default"
-                size="sm"
-                className="w-full bg-gradient-primary hover:glow-primary transition-all duration-300 mt-4"
-                onClick={() => handleClick('#contact')}
+              <a
+                href="/register"
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md bg-gradient-primary hover:glow-primary transition-all duration-300 mt-4 text-sm"
               >
                 Join Club
-              </Button>
+              </a>
             </div>
           </div>
         )}

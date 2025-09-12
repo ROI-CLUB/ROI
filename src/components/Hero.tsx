@@ -15,30 +15,27 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{
+          backgroundImage: `url(https://i.postimg.cc/NGSPzwQ0/Screenshot-2025-09-12-120739.png), url(/ai-hero.png), url(${heroBg})`,
+          backgroundSize: '50% auto, 50% auto, cover',
+          backgroundRepeat: 'no-repeat, no-repeat, no-repeat',
+          backgroundPosition: 'right center, right center, center'
+        }}
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-surface/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/70 to-surface/80" />
       
       {/* Neural Network Pattern Overlay */}
       <div className="absolute inset-0 neural-bg" />
       
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-4 h-4 bg-primary rounded-full pulse-glow" />
-      <div className="absolute top-40 right-20 w-6 h-6 bg-secondary rounded-full pulse-glow animation-delay-1000" />
-      <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-accent rounded-full pulse-glow animation-delay-2000" />
+      {/* Floating Elements (subtle, avoid overlapping stats) */}
+      <div className="absolute top-20 left-10 w-4 h-4 bg-primary rounded-full pulse-glow opacity-50" />
+      <div className="absolute top-40 right-20 w-6 h-6 bg-secondary rounded-full pulse-glow animation-delay-1000 opacity-40" />
+      <div className="hidden md:block absolute bottom-48 left-1/4 w-3 h-3 bg-accent rounded-full pulse-glow animation-delay-2000 opacity-40" />
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        {/* Overline */}
-        <div className="flex items-center justify-center mb-6">
-          <Sparkles className="h-5 w-5 text-primary mr-2" />
-          <span className="text-primary font-medium tracking-wider uppercase text-sm">
-            Official AI Club of ROI Tech
-          </span>
-          <Sparkles className="h-5 w-5 text-primary ml-2" />
-        </div>
         
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
@@ -55,14 +52,13 @@ const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg"
-            onClick={handleJoinClick}
-            className="bg-gradient-primary hover:glow-primary transition-all duration-300 transform hover:scale-105 text-lg px-8 py-6"
+          <a
+            href="/register"
+            className="inline-flex items-center bg-gradient-primary hover:glow-primary transition-all duration-300 transform hover:scale-105 text-lg px-8 py-6 rounded-md"
           >
             Join the Club
             <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          </a>
           
           <Button 
             variant="outline"

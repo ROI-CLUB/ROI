@@ -5,7 +5,7 @@ const About = () => {
     {
       icon: Brain,
       title: "AI Research",
-      description: "Cutting-edge research in machine learning and artificial intelligence"
+      description: "Cutting-edge research in artificial intelligence"
     },
     {
       icon: Users,
@@ -46,7 +46,7 @@ const About = () => {
             
             <p className="text-lg text-muted-foreground leading-relaxed">
               ROI Tech Club is a dynamic student-driven initiative focused on Artificial Intelligence, 
-              Machine Learning, Data Science, and cutting-edge technologies. We are committed to 
+              Data Science, and cutting-edge technologies. We are committed to 
               creating an ecosystem where students can explore, learn, and innovate in the rapidly 
               evolving field of AI.
             </p>
